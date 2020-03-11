@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<!-- Setting the page name and a few fixed things -->	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Services | Get A Quote.</title>
+		<link rel="stylesheet" href="./css/style.css">
+
+
+		<script>
+		  function calcSub() 
+		   {
+		  	var Hyper = document.getElementById('radiobutton1').value;
+		  	var Multi = document.getElementById('radiobutton2').value;
+		  	var Cloud = document.getElementById('radiobutton3').value;
+
+		  	if(radiobutton1.checked==true)
+		  		document.getElementById("subtotal").value = Hyper
+
+		  	else if(radiobutton2.checked==true)
+		  		document.getElementById("subtotal").value = Multi
+
+		  	else if(radiobutton3.checked==true)
+		  		document.getElementById("subtotal").value = Cloud
+		  	else
+		  		alert("Error")
+		  }
+
+		  function calcDiscount(){
+		  	var subtotal = document.getElementById("subtotal").value;
+		  	var discount 
+		  	parseInt(subtotal)
+		  	document.getElementById("discount").value = subtotal*0.05
+		  }
+
+		  function calcVat(){
+		  	var Vat 
+		  	var subtotal = document.getElementById("subtotal").value;
+		  	document.getElementById("Vat").value = subtotal*0.20
+		  }
+
+		  function calcTotal(){
+		  	var subtotal = document.getElementById("subtotal").value;
+		  	var discount = document.getElementById("discount").value;
+		  	parseInt(discount)
+
+		  	var Vat = document.getElementById("Vat").value
+		  	parseInt(Vat)
+
+		  	document.getElementById("total").value =subtotal-discount+parseInt(Vat)
+		  }
+
+		  function calcClear(){
+		  	document.getElementById("subtotal").value = ""
+		  	document.getElementById("discount").value = ""
+		  	document.getElementById("Vat").value = ""
+		  	document.getElementById("total").value = ""
+		  }			
+		</script>
+
+	</head>
+	
+	<body>
+<!-- Creating a header with tabs allowing for easier redirection to other tabs -->			
+		<header class="calculatortop">
+			<div class= "container">
+			<div id="branding">
+				<h1>iConsultancy</h1>
+			</div>
+
+			<nav> 
+				<ul> 
+					<li> <a href="index.html">Home</a></li>
+					<li> <a href="about.html">About Us</a></li>
+					<li> <a href="aboutconsultancy.html">About Consultancy</a></li>
+					<li class="current"> <a href="ebus1.html">Services</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		
+		<div  class="ebusiness" no-repeat>
+			<div>
+				<br></br>
+
+
+				<h1 id="topheading">Select a Consulting Service.</h1>
+				
+				<div class="calculator">
+					<div>
+						<input type="radio" name="service" id="radiobutton1" value="250">HyperAutomation @ $250<br/>	  
+
+						<input type="radio" name="service" id="radiobutton2" value="500">MultiExperience @ $500<br/>  
+
+						<input type="radio" name="service" id="radiobutton3" value="1000">Distributed Cloud @ $1000<br/>
+						  
+
+						<p>Subtotal</p><input id="subtotal" type="text" readonly/>
+						<p>Discount 5%</p><input id="discount" type="text" readonly/>
+						<p>Vat 20%</p><input id="Vat" type="text" readonly/>
+						<p>Total Cost</p><input id="total" type="text" readonly/>	   
+					</div>
+
+					<div style="padding-top: 15px;">
+						<button onClick=" calcSub(), calcDiscount(), calcVat(), calcTotal();">Calculate Cost</button>
+
+						<button onclick="calcClear();">Clear Choice</button>
+					</div>
+
+					<br></br>
+				</div>
+			</div>
+		</div>
+
+<!-- a copyright logo and text is added to the bottom-->
+		<footer class="footer">
+			<p>iConsultancy Ltd, Est 2020, Copyright &copy; 2020</p>
+		</footer>
+	</body>
+</html> 

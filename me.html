@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<!-- Setting the page name and a few fixed things -->	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Myself |</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	
+	<body>
+<!-- Creating a header with tabs allowing for easier redirection to other tabs -->		
+		<header>
+			<div class= "container">
+			<div id="branding">
+				<h1>iConsultancy</h1>
+			</div>
+
+			<nav> 
+				<ul> 
+					<li> <a href="index.html">Home</a></li>
+					<li class="current"> <a href="about.html">About Us</a></li>
+					<li> <a href="aboutconsultancy.html">About Consultancy</a></li>
+					<li> <a href="ebus1.html">Services</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="Menu">	
+			<div class="nav">
+				<ul>
+					<li style="font-size: 26px" style="color: white">CV :</li>
+					<li class="current"><a href="personal.html">Personal Details</a></li>
+					<li><a href="educational.html">Education</a></li>
+					<li><a href="work.html">Work Experience</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<div class="personalbuttons">
+			<div class="buttonsme">
+				<p>-- Find Out More --</p>
+
+				<button class="button1" onclick="myFunction()">About Me
+					<script>
+						function myFunction() {
+						  location.replace("me.html")
+						}
+					</script>
+				</button>
+
+				
+
+				<button class="button2" onclick="myFunction()">Interests
+					<script>
+						function myFunction() {
+						  location.replace("interest.html")
+						}
+						</script>
+				</button>
+			</div>
+		</div>
+
+			
+	<!-- this is the main body of text on the website -->
+
+
+	<!-- Creating a newsletter tab for the website -->		
+		<section id="newsletter">
+			<div class="container">
+				<h1>Subscribe to our Newsletter</h1>
+				<form>
+					<input type="email" placeholder="Enter email here">
+					<button type="submit" class="button_1">Subscribe</button>	
+				</form>				
+			</div>
+		</section>
+
+	<!-- a copyright logo and text is added to the bottom-->
+		<footer>
+			<p>iConsultancy Ltd, Est 2020, Copyright &copy; 2020</p>
+		</footer>
+	</body>
+</html> 

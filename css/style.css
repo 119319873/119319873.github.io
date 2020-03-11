@@ -1,0 +1,465 @@
+/* ALL BODY SECTIONS SETTING */
+/* coding the body attributes such as font and colour */
+ body{
+ 	font-family: Ariel, script, Sans Pro;
+ 	font-size: 15px;
+ 	line-height: 1.5;
+ 	padding: 0;
+ 	margin: 0;
+ 	background-color: white;
+ }
+
+/* the text in the showcase is on the welcome photo*/
+ .container{
+ 	width: 80%;
+ 	margin:auto;
+ 	overflow: hidden;
+ }
+
+/* coding the body attributes such as font and colour */
+ ul{
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+/* BUTTON SETTING*/
+/* coding the button attributes such as height and colour etc */
+ .button_1{
+ 	height: 38px;
+ 	background: navy;
+ 	border: 0;
+ 	padding-left: 20px;
+ 	padding-right: 20px;
+ 	color: white;
+ }
+
+/* HEADER SECTION FOR ALL TABS*/
+/* coding the header attributes such as font and colour size and spacing */
+ header{
+ 	background: #262626;
+ 	color: white;
+ 	padding-top: 5px;
+ 	min-height: 50px;
+ 	border-bottom: white 5px solid;
+ }
+
+/* coding the header attributes such as font and colour for the a href links*/
+ header a{
+ 	color: white;
+ 	text-transform: uppercase;
+ 	font-size: 50px
+ 	font-family: sans-serif;	
+ }
+
+/* coding the header attributes for the list items. (putting them in order)*/
+ header li{
+ 	float: center;
+ 	padding: 0px 25px 0px 25px;
+ 	display: inline;
+ }
+
+/* coding the logo location on the header*/
+ header #branding{
+ 	float: left;
+ }
+
+/* applying the font and the padding to the logo*/
+ header #branding h1{
+ 	margin: 0;
+ 	font-family: sans-serif;
+ 	padding-top: 8px;
+ }
+
+/* the placement of the redirection links are changed to look good*/
+ header nav{
+ 	float: right;
+ 	margin-top: 15px;
+ }
+
+/* redirection tabs are made bold and the text is coloured*/
+ header .highlight, header .current a{
+ 	text-decoration-color: #00b8e6;
+ 	font-weight: bold;
+ }
+
+/* when the curser hoovers over the link, the link text turns bold*/
+ header a:hover{
+ 	font-weight: bold;
+ }
+
+/* SHOWCASE SECTION*/
+/* the showcase where the greeting look is placed is changed*/
+/* an image is added and text is adjusted in size and placement*/
+ #showcase{
+ 	min-height: 400px;
+ 	background:url('../images/consultancy1.png') no-repeat;
+ 	background-size: cover;
+ 	text-align: center;
+ 	color: white;
+ }
+
+/* text of the heading is adjusted*/
+ #showcase h1{
+ 	margin-top: 100px;
+ 	font-size: 55px;
+ 	margin-bottom: 10px;	
+ }
+
+/* the paraghraph is adjusted */
+ #showcase p{
+ 	font-size: 20px;
+ }
+
+/* NEWSLETTER SECTION*/
+/* the newsletter tab is formated in shape and colour*/
+ #newsletter{
+ 	padding: 0.5px;
+ 	colour: white;
+ 	background:  #00b8e6;
+ }
+/* the newsletter heading is made move to the left and changed to white*/
+ #newsletter h1{
+ 	float: left;
+ 	color: white;
+ }
+
+ #newsletter form{
+ 	float: right;
+ 	margin-top: 15px;
+ }
+
+/* the format of the newsletter box is set to email*/
+ #newsletter input[type="email"]{
+ 	padding: 4px;
+ 	height: 25px;
+ 	width: 250px;
+ }
+
+/* LOGO BOXES*/
+/* coding the coding tool logos*/
+#boxes{
+	margin-top:20px;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 31%;
+	padding: 10px;
+}	
+
+.box p{
+	font-size: 17px;
+}
+
+
+/* the href link is changed to red*/
+#boxes a{
+	color: red;
+}
+
+/* FOOTER SECTION*/
+/* the base of the page is coloured and the text is edited*/
+footer{
+	background-color: #262626;
+	padding: 5px;
+	text-align: center;
+	margin-top: 1px;
+	color: white;
+}
+
+/*ABOUT SECTION*/
+/* this is the section for the about tab*/
+/* the navigation section colours and alignment are edited*/
+section .nav ul{
+ 	list-style: none;
+ 	background-color:  #00b8e6;
+ 	text-align: center;
+ 	padding: 0;
+ 	margin: 0;
+}
+
+/* the link text is made white and inline*/
+section .nav li{
+	display: inline-block;
+	color: white;
+}
+
+/* the link text sizing font and location are edited*/
+section .nav a{
+	text-decoration: none;
+	color: white;
+	width: 150px;
+	display: block;
+	padding: 0px 10px 0px 10px;
+	font-size: 17px;
+	font-family: sans-serif;
+	transition: 0.5s;
+}
+section .nav{
+	border-bottom: white 5px solid;
+}
+
+/* when the cursor goes over the cv links, the links turn bold*/
+section .nav a:hoover{
+	transition: 0.5s;
+	background-color: blue;
+}
+
+/* makes the rediection tags red */
+section .highlight{
+ 	colour: red;
+ 	font-weight: bold;
+ }
+
+/* when you hoover over the link it goes bold*/
+ section a:hover{
+ 	font-weight: bold;
+ }
+
+/* the container for the image is adjusted to help make the webiste look good */
+#Main{
+ 	min-height: 400px;
+ 	background:url('../images/service.png') no-repeat 0px;
+ 	background-size: cover;
+ 	text-align: center;
+ 	color: white;
+ }
+#story p {
+	text-align: left;
+	padding-left: 120px;
+	padding-right: 120px;
+	font-size: 17px;
+}
+
+#story h2{
+	text-decoration: underline;"
+}
+
+
+/* the personal cv verticle menu to ease navigation of that site */
+#personalbody{
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+#personalbody a{
+  background-color: navy;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+#personalbody a:hover {
+  background-color: #000000ff
+  font-size:15px;
+}
+
+#personalbody a.active {
+  background-color: white;
+  color: white;
+}
+
+/*EDUCATION SECTION*/
+/* resizing text and images */
+#school img{
+	float: left;
+	width: 33.1%;
+	padding: 1px;
+}
+
+#school p{
+	font-size: 17px;
+}
+
+#school h2{
+	text-decoration: underline;
+}
+/* tables for results */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}  
+
+.pagetitle h2{
+	text-decoration: underline;
+}
+
+.work img{
+	width: 33.1%;
+}
+
+/*PERSONAL TAB SECTION*/
+/* a stock photo is added, resized and text is adjusted*/
+#personalbody{
+ 	min-height: 400px;
+
+ 	background-size: cover;
+ 	text-align: center;
+ 	color: white;
+ }
+
+ .personalcontainer{
+ 	min-height: 400px;
+ 	background:url('../images/personal5.jpg') no-repeat 0px;
+ 	background-size: cover;
+ 	text-align: center;
+ 	color: white;
+ }
+
+/* buttons are assigned, reshaped and designed*/
+ .button1{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonsme{
+text-align: center;
+float: center;
+}
+
+.button2{
+background-color: #4CAF50;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.button1 {background-color: #262626;} 
+.button2 {background-color: #262626;} 
+
+.buttonsme p{ 
+	display: inline-block;
+	float: center;
+}
+
+ /* ABOUT CONSULTANCY BOXES*/
+/* coding the about consultancy logos and redirection links*/
+/* code resused from the boxes area on the home screen */
+
+h2.pagetitleresearch{
+	text-decoration: underline;
+	text-align: center;
+	color: black;
+}
+
+h2.OverViewheading{ 
+	text-align: center;
+	text-decoration: underline;
+	padding: none;
+	margin: 0;
+}
+
+.pagetitleresearch{
+	margin: 0;
+	background-color: white;
+	color: black;
+}
+
+/*CV SECTION*/
+#Mainbody{
+ 	min-height: 400px;
+ 	background:url('../images/office6.jpg') no-repeat 0px;
+ 	background-size: cover;
+ 	text-align: center;
+ 	color: white;
+}
+
+#headschool{
+	text-align: center;
+	text-decoration: underline;
+}
+
+#describe{
+	font-size:17px;
+	text-align: center;
+	
+}
+
+#year{
+	text-align: center;
+	font-size:17px;
+}
+
+#Main2{
+ 	min-height: 400px;
+ 	background:url('../images/aboutme.jpg') no-repeat 0px;
+ 	background-size: cover;
+ 	text-align: center;
+ 	color: white;
+ }
+
+ #cv{
+ 	text-align: center;
+	text-decoration: underline;
+ }
+
+ #cv1{
+ 	text-align: center;
+	font-size:17px;
+ }
+
+ #back{
+ 	min-height: 400px;
+ 	background:url('../images/background.jpg') no-repeat 0px;
+ 	background-size: cover;
+ 	text-align: center;
+ 	color: white;
+ }
+
+ .types{
+ 	text-align: center;
+ 	text-decoration: underline;
+ }
+
+
+/*EBUSSINESS CALCULATOR SECTION*/
+/*changing the way it looks*/
+div.ebusiness{
+	text-align: center;
+	padding-bottom: 25px;
+	background:url('../images/img.jpg');
+	background-size: cover;
+	padding-top: 0px;
+	margin-bottom: 4px;
+}
+
+/*getting rid of the top margin*/
+header.calculatortop{
+	margin-bottom: 0px;
+}
+
+#topheading{
+	padding-top: 0px;
+	margin-top: 0px; 
+	text-decoration: underline;
+}
+
+/*making the footer take up the white space at the bottom*/
+footer.footer{
+	background-color: #262626;
+	padding: 8px;
+	text-align: center;
+	margin-top: 1px;
+	color: white;
+	margin-bottom: 2px;
+}
